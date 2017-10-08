@@ -1,0 +1,77 @@
+<!--                      This is the Header                             -->
+<nav class="container-fluid">
+    <div class="logo"><img src="../assets/logo.png" alt=""></div>
+    <div class="Separator"></div>
+    <a href="#">Official Website</a>
+    <a href="#">Facebook</a>
+    <a href="#">Youtube</a>
+    <a href="#">Twitter</a>
+    <a href="#">Report a Bug</a>
+</nav>
+
+
+<!--                            Here where i create tasks               -->
+
+    <div class="row">
+        <div class="container task_text_container">
+            <div class="col-3">
+                <input class="effect-1" type="text" placeholder="Do you have any tasks for today ?" #task_text>
+                <span class="focus-border"></span>
+            </div>
+            <div class="col-2">
+                <button  class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored add_task_btn" (click) = 'AddTask(task_text.value)'>
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--<tr  *ngFor="#t of tasks">
+        <td>{{t.id}} </td>
+        <td>{{t.text}}</td>
+        <td>{{t.created_date}}</td>
+    </tr>-->
+<div class="container">
+    <!--<div class="row notesdiv" *ngif="{{t.id}} == 5">
+        <div class="col-md-3" *ngFor="#t of tasks">
+            <div class="postIt  noteitem">
+                <div class=topBar></div>
+                <div class=form>
+                    <div contenteditable class=textAria>
+                       Task N : {{t.id}} :
+                        <em>{{t.text}}</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="row">
+        <div *ngFor="#t of tasks">
+            <div  *ngIf="i % 5 == 0"></div>
+                <div class="col-md-3">
+                    <div class="clearfix" id="postIt ">
+                    <div class=topBar>
+                       <div class="row">
+                           <div class="col-md-1 the_icon"> <i class="material-icons">watch_later</i></div>
+                           <div class="col-md-9 the_created_date">{{t.created_date}}</div>
+                       </div>
+                    </div>
+                    <div class=form>
+                        <div contenteditable class=textAria>
+
+                            <b>{{t.text}}</b>
+                        </div>
+                    </div>
+                        <button class="bottombar" (click)="DoneTask(t.id)"><i class="material-icons">done</i></button>
+                </div>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+        </div>
+    </div>
+
+</div>

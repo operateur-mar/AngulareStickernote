@@ -1,0 +1,148 @@
+body {
+    background-color: #fff ;
+
+}
+.loading_tool {
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+}
+.loading_item {
+    align-items:center;
+    justify-content: center;
+}
+.add_task_btn {
+    margin-top: 13px;
+}
+
+.add_task_input {
+
+}
+.logo img{
+    width: 12em;
+    margin: 1em;
+    padding-right: 17px;
+}
+.Separator {
+     border-right: 1px solid #a8acb3;
+     /* width: 12em; */
+     /* margin: 1em; */
+     /* padding-right: 17px; */
+     height: 42px;
+     margin-top: 29px;
+ }
+
+nav {
+    display:  flex;
+    height: 100%;
+    /* justify-content: flex-start;*/
+    align-items: flex-start;
+    width: 100%;
+
+}
+nav a {
+    padding: 38px;
+    font-family: Nunito;
+    color: #a8acb3;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;;
+}
+.right_nav_section {
+    float: right;
+    padding: 38px;
+    font-family: Nunito;
+    color: #a8acb3;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;;
+}
+.task_text_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+/*= input focus effects css
+=========================== */
+:focus{outline: none;}
+
+.col-3{float: left; width: 27.33%; margin: 40px 3%; position: relative;} /* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+.effect-1,
+.effect-2,
+.effect-3{border: 0; padding: 7px 0; border-bottom: 1px solid #ccc;}
+
+.effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #ff5722; transition: 0.4s;}
+.effect-1:focus ~ .focus-border{width: 100%; transition: 0.4s;}
+
+
+/***           NOTE CSS ***************/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.topBar{
+    z-index:1;
+    position:absolute;
+    width:200px;
+    height:40px;
+    background-color:#3c3c3c;
+    color :  #fff;
+    padding: 9px;
+
+}
+.form{
+    margin-top:40px;
+    position:absolute;
+    width:200px;
+    height:140px;
+    background-color:#ff5252;
+    color :  #fff;
+}
+.textAria{
+    position:absolute;
+    border-color:red;
+    width:180px;
+    height:140px;
+    position:absolute;
+    margin:10px;
+    font-family: 'Lato', sans-serif;
+    overflow:hidden;
+}
+.textAria:focus{
+    outline: 0;
+}
+
+.notesdiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+.the_icon {
+    margin-top: 2px;
+}
+.the_created_date {
+    margin-top: 4px;
+}
+.bottombar {
+    background-color: #fff;
+     color : #ff5252;
+    border : #ff5252  solid 1px;
+    border-top : 0px;
+    text-align: center;
+    width: 200px;
+    margin-top: 180px;
+    height:40px;
+    transition: 0.7s;
+}
+.bottombar:hover {
+    background-color: #ff5252;
+    color : #fff;
+    border-top : #fff  solid 1px;
+    cursor: pointer;
+    transition: 0.7s;
+}
